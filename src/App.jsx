@@ -2,6 +2,7 @@ import { Contact } from "./Sections/Contact"
 import { Home } from "./Sections/Home"
 import { Skills } from "./Sections/Skills"
 import Navbar from './Components/Navbar.jsx'
+import Footer from "./Components/Footer.jsx"
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Skills />
       {/* <Projects /> */}
       <Contact />
+      <Footer />
     </div>
   )
 }
