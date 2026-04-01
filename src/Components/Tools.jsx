@@ -9,7 +9,6 @@ const Tools = () => {
                 <SkillBlock value="Git" skill="git" />
                 <SkillBlock value="Github" skill="github" />
                 <SkillBlock value="Visual Studio Code" skill="vscode" />
-                <SkillBlock value="Postman" skill="postman" />
             </div>
         </div>
     )
