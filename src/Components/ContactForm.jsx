@@ -2,7 +2,7 @@ import Button from './Button.jsx'
 
 const ContactForm = () => {
     return (
-        <form action="" className="flex flex-col gap-4 my-4 py-6 px-4 md:p-10 border border-neutral-600 rounded-md">
+        <form action="" className="flex flex-col gap-4 mt-4 py-6 px-4 md:p-10 border border-neutral-600 rounded-md">
             <div className="flex gap-4 flex-col md:flex-row">
                 <div className="flex flex-col gap-1 md:w-1/2">
                     <label htmlFor="name" className="hidden md:block">Name</label>
