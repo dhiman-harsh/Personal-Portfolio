@@ -6,13 +6,15 @@ import Footer from "./Components/Footer.jsx"
 
 const App = () => {
   return (
-    <div className="open-sans text-white bg-neutral-900 relative">
-      <Navbar />
-      <Home />
-      <Skills />
-      {/* <Projects /> */}
-      <Contact />
-      <Footer />
+    <div className="max-w-[1536px] mx-auto">
+      <div className="open-sans text-white bg-neutral-900 relative w-full">
+        <Navbar />
+        <Home />
+        <Skills />
+        {/* <Projects /> */}
+        <Contact />
+        <Footer />
+      </div>
     </div>
   )
 }
