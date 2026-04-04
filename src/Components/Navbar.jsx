@@ -7,7 +7,7 @@ import { useState } from 'react'
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
     return (
-        <div className="flex justify-between px-4 md:px-8 py-3 md:py-4 items-center sticky top-0 border-b border-neutral-600 backdrop-blur-md bg-[#222]/80">
+        <div className={`flex justify-between px-4 md:px-8 py-3 md:py-4 items-center sticky top-0 ${!menuOpen ? 'border-b' : ''} border-neutral-600 backdrop-blur-md bg-[#222]/80`}>
             <Logo />
             <Menu />
             <Hemburner menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
