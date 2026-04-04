@@ -1,8 +1,12 @@
+import { useContext } from "react"
+import { ThemeContext } from "./Context/ThemeContext"
+
 const Footer = () => {
+    const { theme } = useContext(ThemeContext)
     return (
-        <div className="mx-4 md:mx-10 p-4 md:px-10 md:py-10 flex flex-col items-center bg-neutral-900 border-t border-neutral-600">
+        <div className={`mx-4 md:mx-10 p-4 md:px-10 md:py-10 flex flex-col items-center border-t ${theme == 'light' ? 'text-[#111] border-neutral-500' : 'text-[#eee] border-neutral-600'}`}>
             <div>&copy; 2026 Harsh Dhiman. All rights reserved.</div>
-            <div>Built with ❤ using React and Tailwind CSS</div>
+            <div>Built with {theme == 'light' ? '❤️' : '🤍'} using React and Tailwind CSS</div>
         </div>
     )
 }
