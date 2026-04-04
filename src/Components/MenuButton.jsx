@@ -1,6 +1,6 @@
 const MenuButton = ({ value, link }) => {
     return (
-        <a className="pointer" href={link}>{value}</a>
+        <a className="cursor-pointer" href={link}>{value}</a>
 
     )
 }
