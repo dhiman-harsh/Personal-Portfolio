@@ -13,7 +13,7 @@ const Navbar = () => {
             <Hemburner menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             {
                 menuOpen ?
-                    <div className="absolute z-10 top-full left-0 right-0 py-4 justify-between flex flex-col gap-4 items-center border-y border-neutral-600 backdrop-blur-md bg-[#222]/[.8]">
+                    <div className="absolute z-10 top-full left-0 right-0 py-4 justify-between flex flex-col gap-4 items-center border-b border-neutral-600 backdrop-blur-md bg-[#222]/[.8]">
                         <MenuButton value="Home" link="#home" />
                         <MenuButton value="Skills" link="#skills" />
                         <MenuButton value="Projects" link="#projects" />
