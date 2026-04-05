@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { ThemeContext } from "./Context/ThemeContext"
 import Button from "./Button"
+import Role from "./Role.jsx"
 
 const Hero = () => {
     const { theme } = useContext(ThemeContext)
@@ -11,7 +12,7 @@ const Hero = () => {
                 <div className="px-4 md:px-0">
                     <div className={`type text-lg md:text-xl font-medium ${theme == 'light' ? 'text-[#475569]' : 'text-[#A3A3A3]'}`}>Hello, I am</div>
                     <div className={`type text-2xl md:text-3xl font-medium ${theme == 'light' ? 'text-[#0F172A]' : 'text-[#F5F5F5]'}`}>Harsh Dhiman</div>
-                    <div className={`type text-3xl md:text-4xl font-semibold my-2 ${theme == 'light' ? 'text-[#059669]' : 'text-[#10B981]'}`}>A Front End Developer</div>
+                    <Role />
                     <div className={`max-w-[360px] ${theme == 'light' ? 'text-[#475569]' : 'text-[#A3A3A3]'}`}>
                         Frontend Developer building interactive web apps with React and Tailwind CSS. I create smooth, responsive experiences using clean, maintainable code that solves real-world problems.
                     </div>
