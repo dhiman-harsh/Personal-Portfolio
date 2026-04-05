@@ -9,10 +9,10 @@ const Hero = () => {
             <div className="top flex items-start flex-col gap-6 md:flex-row md:gap-12">
                 <div className={`size-60 rounded-sm mx-auto shadow-lg ${theme == 'light' ? 'border-4 border-[#FFFFFF]' : 'border border-neutral-600'}`}></div>
                 <div className="px-4 md:px-0">
-                    <div className={`type text-lg md:text-xl font-medium ${theme == 'light' ? 'text-[#475569]' : 'text-[#aaa]'}`}>Hello, I am</div>
-                    <div className={`type text-2xl md:text-3xl font-medium ${theme == 'light' ? 'text-[#0F172A]' : 'text-[#eee]'}`}>Harsh Dhiman</div>
-                    <div className={`type text-3xl md:text-4xl font-semibold my-2 ${theme == 'light' ? 'text-[#0F172A]' : 'text-[#fff]'}`}>A Front End Developer</div>
-                    <div className={`max-w-[360px] ${theme == 'light' ? 'text-[#475569]' : 'text-[#aaa]'}`}>
+                    <div className={`type text-lg md:text-xl font-medium ${theme == 'light' ? 'text-[#475569]' : 'text-[#A3A3A3]'}`}>Hello, I am</div>
+                    <div className={`type text-2xl md:text-3xl font-medium ${theme == 'light' ? 'text-[#0F172A]' : 'text-[#F5F5F5]'}`}>Harsh Dhiman</div>
+                    <div className={`type text-3xl md:text-4xl font-semibold my-2 ${theme == 'light' ? 'text-[#059669]' : 'text-[#10B981]'}`}>A Front End Developer</div>
+                    <div className={`max-w-[360px] ${theme == 'light' ? 'text-[#475569]' : 'text-[#A3A3A3]'}`}>
                         Frontend Developer building interactive web apps with React and Tailwind CSS. I create smooth, responsive experiences using clean, maintainable code that solves real-world problems.
                     </div>
                 </div>

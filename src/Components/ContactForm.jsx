@@ -10,7 +10,7 @@ const ButtonComponent = () => {
     return (
         <button
             type="submit"
-            className={`py-2 px-4 rounded-sm text-white active:scale-95 md:w-fit cursor-pointer ${pending ? `bg-neutral-600` : `${theme == 'light' ? 'bg-[#059669] text-[#FFFFFF]' : 'bg-[#2E8B57] text-white'}`}`}
+            className={`py-2 px-4 rounded-md text-white active:scale-95 md:w-fit cursor-pointer ${pending ? `bg-[#404040]` : `${theme == 'light' ? 'bg-[#059669] text-[#FFFFFF]' : 'bg-[#059669] text-[#FFFFFF] hover:bg-[#10B981]'}`}`}
             disabled={pending}>
             {pending ? "Sending..." : "Send Message"}
         </button>
@@ -70,20 +70,20 @@ const ContactForm = () => {
     }
 
     return (
-        <form action={actionHandler} className={`flex flex-col gap-4 mt-4 py-6 px-4 md:p-10 border rounded-md ${theme == 'light' ? 'border-[#E2E8F0]' : 'border-neutral-600'}`}>
+        <form action={actionHandler} className={`flex flex-col gap-4 mt-4 py-6 px-4 md:p-10 border rounded-md ${theme == 'light' ? 'border-[#E2E8F0]' : 'border-[#404040]'}`}>
             <div className="flex gap-4 flex-col md:flex-row">
                 <div className="flex flex-col gap-1 md:w-1/2">
-                    <label htmlFor="name" className={`hidden md:block cursor-pointer ${theme == 'light' ? 'text-[#0F172A]' : 'text-[#eee]'}`}>Name</label>
-                    <input id="name" type="text" placeholder="Your Name" value={name} onChange={(e) => { handleName(e) }} className={`flex-1 border px-4 py-2 rounded-sm ${theme == 'light' ? 'bg-[#FFFFFF] text-[#0F172A] border-[#E2E8F0]' : 'bg-[#222] border-neutral-600 text-[#eee]'}`} required />
+                    <label htmlFor="name" className={`hidden md:block cursor-pointer ${theme == 'light' ? 'text-[#0F172A]' : 'text-[#F5F5F5]'}`}>Name</label>
+                    <input id="name" type="text" placeholder="Your Name" value={name} onChange={(e) => { handleName(e) }} className={`flex-1 border px-4 py-2 rounded-md ${theme == 'light' ? 'bg-[#FFFFFF] text-[#0F172A] border-[#E2E8F0]' : 'bg-[#262626] border-[#404040] text-[#F5F5F5]'}`} required />
                 </div>
                 <div className="flex flex-col gap-1 md:w-1/2">
-                    <label htmlFor="email" className={`hidden md:block cursor-pointer ${theme == 'light' ? 'text-[#0F172A]' : 'text-[#eee]'}`}>Email</label>
-                    <input id="email" type="email" placeholder="Your Email" value={email} onChange={(e) => { handleEmail(e) }} className={`flex-1 border px-4 py-2 rounded-sm ${theme == 'light' ? 'bg-[#FFFFFF] text-[#0F172A] border-[#E2E8F0]' : 'bg-[#222] border-neutral-600 text-[#eee]'}`} required />
+                    <label htmlFor="email" className={`hidden md:block cursor-pointer ${theme == 'light' ? 'text-[#0F172A]' : 'text-[#F5F5F5]'}`}>Email</label>
+                    <input id="email" type="email" placeholder="Your Email" value={email} onChange={(e) => { handleEmail(e) }} className={`flex-1 border px-4 py-2 rounded-md ${theme == 'light' ? 'bg-[#FFFFFF] text-[#0F172A] border-[#E2E8F0]' : 'bg-[#262626] border-[#404040] text-[#F5F5F5]'}`} required />
                 </div>
             </div>
             <div className="flex flex-col gap-1">
-                <label htmlFor="message" className={`hidden md:block cursor-pointer ${theme == 'light' ? 'text-[#0F172A]' : 'text-[#eee]'}`}>Message</label>
-                <textarea rows="5" id="message" placeholder="Your Message" value={message} onChange={(e) => { handleMessage(e) }} className={`flex-1 border px-4 py-2 rounded-sm ${theme == 'light' ? 'bg-[#FFFFFF] text-[#0F172A] border-[#E2E8F0]' : 'bg-[#222] border-neutral-600 text-[#eee]'}`} required ></textarea>
+                <label htmlFor="message" className={`hidden md:block cursor-pointer ${theme == 'light' ? 'text-[#0F172A]' : 'text-[#F5F5F5]'}`}>Message</label>
+                <textarea rows="5" id="message" placeholder="Your Message" value={message} onChange={(e) => { handleMessage(e) }} className={`flex-1 border px-4 py-2 rounded-md ${theme == 'light' ? 'bg-[#FFFFFF] text-[#0F172A] border-[#E2E8F0]' : 'bg-[#262626] border-[#404040] text-[#F5F5F5]'}`} required ></textarea>
             </div>
             <ButtonComponent />
         </form>
