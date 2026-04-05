@@ -13,7 +13,7 @@ const Hero = () => {
                     <div className={`type text-2xl md:text-3xl font-medium ${theme == 'light' ? 'text-[#0F172A]' : 'text-[#eee]'}`}>Harsh Dhiman</div>
                     <div className={`type text-3xl md:text-4xl font-semibold my-2 ${theme == 'light' ? 'text-[#0F172A]' : 'text-[#fff]'}`}>A Front End Developer</div>
                     <div className={`max-w-[360px] ${theme == 'light' ? 'text-[#475569]' : 'text-[#aaa]'}`}>
-                        Frontend Developer building interactive web apps with React and efficient JavaScript. I create smooth, responsive experiences using clean, maintainable code that solves real-world problems.
+                        Frontend Developer building interactive web apps with React and Tailwind CSS. I create smooth, responsive experiences using clean, maintainable code that solves real-world problems.
                     </div>
                 </div>
             </div>
