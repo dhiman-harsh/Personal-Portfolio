@@ -18,7 +18,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className="flex gap-6">
-                <Button value="Download CV" />
+                <Button value="Download CV" link="#contact"/>
                 <Button value="Hire Me" link="#contact" />
             </div>
         </div>
