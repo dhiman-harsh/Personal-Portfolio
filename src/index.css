@@ -34,3 +34,12 @@ body {
   src: url("./assets/fonts/OpenSans-Regular.ttf") format("truetype");
   font-display: swap;
 }
+
+
+.profile-picture {
+  /* https://unavatar.io/linkedin/dhiman-harsh */
+   background-image: url('https://unavatar.io/linkedin/dhiman-harsh');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
