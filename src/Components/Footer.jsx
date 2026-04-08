@@ -7,6 +7,9 @@ const Footer = () => {
         <div className={`mx-4 md:mx-10 p-4 md:px-10 md:py-10 flex flex-col items-center border-t ${theme == 'light' ? 'text-[#475569] border-[#E2E8F0]' : 'text-[#A3A3A3] border-[#404040]'}`}>
             <div>&copy; 2026 Harsh Dhiman. All rights reserved.</div>
             <div>Built with {theme == 'light' ? '❤️' : '🤍'} using React and Tailwind CSS</div>
+            <div className="flex gap-4">
+                <a href="https://github.com/dhiman-harsh/personal-portfolio" target="_blank" className="hover:underline">Source Code</a>
+            </div>
         </div>
     )
 }
