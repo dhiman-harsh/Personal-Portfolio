@@ -1,3 +1,5 @@
+import { useContext } from "react"
+import { ThemeContext } from "./Context/ThemeContext"
 import { useEffect, useState } from "react"
 
 const MultiTypewriter = ({
@@ -6,6 +8,8 @@ const MultiTypewriter = ({
     deleteSpeed = 50,
     delay = 2000
 }) => {
+
+    const { theme } = useContext(ThemeContext)
 
     const [displayText, setDisplayText] = useState("")
     const [wordIndex, setWordIndex] = useState(0)
@@ -37,9 +41,7 @@ const MultiTypewriter = ({
     }, [displayText, isDeleting, wordIndex, words, typeSpeed, deleteSpeed, delay])
 
     return (
-        <>
-            <span>{displayText}</span>
-        </>
+        <span className={`border-r ${theme == 'light' ? 'border-[#059669]' : 'border-[#10B981]'}`}>{displayText}</span>
     )
 }
 
